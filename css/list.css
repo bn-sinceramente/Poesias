@@ -199,6 +199,7 @@ hr {
 }
 
 .bottom {
+    width: 100%;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -294,6 +295,10 @@ hr {
         font-size: 0.7rem;
     }
 
+    .bottom {
+        width: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 550px) and (orientation: landscape) {
@@ -316,7 +321,7 @@ hr {
     }
 
     .tabs {
-        gap: 1.5rem;
+        gap: 1rem;
     }
 
     .tabs a h1 {
@@ -350,6 +355,10 @@ hr {
         font-size: 0.7rem;
     }
 
+    .bottom {
+        width: 90%;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -361,6 +370,10 @@ hr {
     .text {
         width: 70%;
     }
+
+    .bottom {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 550px) and (orientation: landscape) {
@@ -370,6 +383,10 @@ hr {
 
     .text {
         width: 70%;
+    }
+
+    .bottom {
+        width: 100%;
     }
 }
 
