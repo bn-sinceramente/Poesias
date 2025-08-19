@@ -201,11 +201,6 @@ hr {
     .social i {
         font-size: 0.7rem;
     }
-
-    .bottom {
-        width: 90%;
-    }
-
 }
 
 @media only screen and (max-width: 550px) and (orientation: landscape) {
@@ -263,11 +258,6 @@ hr {
     .social i {
         font-size: 0.7rem;
     }
-
-    .bottom {
-        width: 90%;
-    }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -284,10 +274,6 @@ hr {
     .text p {
         font-size: 0.9rem;
     }
-
-    .bottom {
-        width: 100%;
-    }
 }
 
 @media only screen and (min-width: 550px) and (orientation: landscape) {
@@ -302,10 +288,6 @@ hr {
     .text-content p,
     .text p {
         font-size: 0.9rem;
-    }
-
-    .bottom {
-        width: 100%;
     }
 }
 
@@ -375,3 +357,4 @@ hr {
         width: 50%;
     }
 }
+
