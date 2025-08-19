@@ -24,28 +24,6 @@ p {
     color: var(--black);
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    height: 2rem;
-    background-color: transparent;
-    margin: 0;
-    padding: 2rem 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
-}
-
-nav h3 {
-    color: var(--dirtywhite);
-    font-size: 1.2rem;
-}
-
-nav a {
-    text-decoration: none;
-}
-
 .links a {
     display: block;
     position: relative;
@@ -105,7 +83,7 @@ nav a {
 }
 
 .text {
-    width: 20%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -113,13 +91,7 @@ nav a {
 
 .text h1 {
     text-align: center;
-}
-
-hr {
-    border: none;
-    height: 0.15rem;
-    color: var(--dirtywhite);
-    background-color: var(--dirtywhite);
+    font-size: 2rem;
 }
 
 
@@ -137,4 +109,45 @@ h1 {
 .social i,
 p {
     font-size: 0.8rem;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+
+
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 550px) and (orientation: landscape) {
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 550px) and (orientation: portrait) {
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 550px) and (orientation: landscape) {
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .text h1 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .text h1 {
+        font-size: 2rem;
+    }
 }
