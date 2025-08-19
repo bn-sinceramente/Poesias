@@ -165,10 +165,6 @@ hr {
         width: 80%;
     }
 
-    .text-content p {
-        font-size: 0.9rem;
-    }
-
     .tabs {
         gap: 1.5rem;
     }
@@ -180,6 +176,10 @@ hr {
 
     .text p {
         font-size: 0.9rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
     }
 
     .option h3,
@@ -200,6 +200,10 @@ hr {
     .word p,
     .social i {
         font-size: 0.7rem;
+    }
+
+    .bottom {
+        width: 90%;
     }
 
 }
@@ -227,15 +231,17 @@ hr {
         gap: 1.5rem;
     }
 
-    .tabs a h1 {
+    .tabs h2,
+    .back h3 {
         font-size: 0.9rem;
     }
 
-    .tabs a h2,
-    .back h3,
-    .option h3,
-    .option h4 {
-        font-size: 0.7rem;
+    .text p {
+        font-size: 0.9rem;
+    }
+
+    .text-content p {
+        font-size: 0.8rem;
     }
 
     .option h3,
@@ -258,6 +264,10 @@ hr {
         font-size: 0.7rem;
     }
 
+    .bottom {
+        width: 90%;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -274,6 +284,10 @@ hr {
     .text p {
         font-size: 0.9rem;
     }
+
+    .bottom {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 550px) and (orientation: landscape) {
@@ -288,6 +302,10 @@ hr {
     .text-content p,
     .text p {
         font-size: 0.9rem;
+    }
+
+    .bottom {
+        width: 100%;
     }
 }
 
