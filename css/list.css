@@ -346,7 +346,9 @@ hr {
         text-align: right;
     }
 
-
+    .eu-content p {
+        font-size: 0.9rem;
+    }
     .bottom h3 {
         font-size: 0.9rem;
     }
@@ -438,4 +440,5 @@ hr {
         width: 50%;
     }
 }
+
 
