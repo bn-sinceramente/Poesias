@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Special+Elite&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+    background-color: var(--black);
+}
+
+h1,
+h3 {
+    font-family: "Beth Ellen", cursive;
+}
+
+:root {
+    --paper: #fffbf5;
+    --dirtywhite: #fbfbfb;
+    --black: #111111;
+    --grey: #454545;
+}
+
+p {
+    color: var(--black);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    background-color: transparent;
+    margin: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav h3 {
+    color: var(--dirtywhite);
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.links a {
+    display: block;
+    position: relative;
+    padding: 0.1rem 0;
+    text-decoration: none;
+    transform: scale(1);
+}
+
+.links a:hover {
+    transform: scale(1.15);
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--dirtywhite);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.links a:hover::after,
+.links a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.1rem, 0);
+}
+
+.links a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.links a:hover::after,
+.links a:focus::after {
+    transform: scale(1);
+}
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--paper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/paper.jpg");
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text h1 {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 0.15rem;
+    color: var(--dirtywhite);
+    background-color: var(--dirtywhite);
+}
+
+
+.links {
+    display: flex;
+    gap: 3rem;
+}
+
+.links a,
+p,
+h1 {
+    color: var(--dirtywhite);
+}
+
+.social i,
+p {
+    font-size: 0.8rem;
+}

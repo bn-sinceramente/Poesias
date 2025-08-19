@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Special+Elite&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Special Elite', cursive;
+    background-color: var(--paper);
+}
+
+nav h3,
+.bottom h3,
+nav p {
+    font-family: "Beth Ellen", cursive;
+}
+
+:root {
+    --paper: #fffbf5;
+    --dirtywhite: #fbfbfb;
+    --black: #111111;
+    --grey: #454545;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    background-color: transparent;
+    margin: 0;
+    padding: 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+nav h3 {
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.pages a {
+    display: block;
+    position: relative;
+    padding: 0.1rem 0;
+    text-decoration: none;
+}
+
+.pages a::after {
+    content: '';
+    position: absolute;
+    bottom: 0.8rem;
+    left: 0;
+    width: 100%;
+    height: 0.1rem;
+    background-color: var(--black);
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+
+.pages a:hover::after,
+.pages a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.1rem, 0);
+}
+
+.pages a::after {
+    opacity: 1;
+    transform: scale(0);
+    transform-origin: center;
+}
+
+.pages a:hover::after,
+.pages a:focus::after {
+    transform: scale(1);
+}
+
+
+.pages {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.pages a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--paper);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(/images/paper.jpg);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.blank {
+    width: 100%;
+    height: 10rem;
+}
+
+.text {
+    width: 50%;
+}
+
+.tabs,
+.back {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.tabs a,
+.back a {
+    color: var(--black);
+}
+
+.text h1,
+a,
+h3,
+p {
+    line-height: 0.8rem;
+}
+
+hr {
+    border: none;
+    height: 0.15rem;
+    color: var(--black);
+    background-color: var(--black);
+}
+
+.nav-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav-text h3 {
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.nav-text a {
+    text-decoration: none;
+}
+
+.option {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.option h3,
+.option h4 {
+    color: var(--black);
+    font-size: 1rem;
+}
+
+.tabs a h1 {
+    font-size: 1.2rem;
+}
+
+.tabs a h2 {
+    font-size: 1rem;
+    transform: scale(1);
+}
+
+.back h3 {
+    font-size: 1rem;
+}
+
+.tabs a h2:hover {
+    transform: scale(1.1);
+}
+
+.eu-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.eu-content p {
+    line-height: 1.3rem;
+}
+
+.bottom {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 0 6rem 0;
+}
+
+.bottom h3 {
+    color: var(--dirtywhite);
+}
+
+.social {
+    display: flex;
+    gap: 2rem;
+}
+
+.social a {
+    text-decoration: none;
+}
+
+.bottom h3 {
+    font-size: 1.2rem;
+    line-height: 0.4rem;
+    color: var(--black);
+}
+
+.bottom p {
+    line-height: 1rem;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+.word p,
+.social i {
+    line-height: 0.4rem;
+    color: var(--black);
+    font-size: 0.9rem;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 550px) and (orientation: portrait) {
+
+
+    nav {
+        padding: 2rem 2rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+    }
+
+    .blank {
+        height: 7rem;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .tabs {
+        gap: 1rem;
+    }
+
+    .tabs a h1 {
+        font-size: 0.9rem;
+    }
+
+    .tabs a h2,
+    .back h3,
+    .option h3,
+    .option h4 {
+        font-size: 0.7rem;
+    }
+
+    .option h3,
+    h4 {
+        width: 50%;
+    }
+
+    .option h4 {
+        text-align: right;
+    }
+
+
+    .bottom h3 {
+        font-size: 0.9rem;
+    }
+
+    .bottom p,
+    .word p,
+    .social i {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media only screen and (max-width: 550px) and (orientation: landscape) {
+
+
+    nav {
+        padding: 2rem 2rem;
+    }
+
+    nav h3 {
+        font-size: 1rem;
+    }
+
+    .blank {
+        height: 7rem;
+    }
+
+    .text {
+        width: 80%;
+    }
+
+    .tabs {
+        gap: 1.5rem;
+    }
+
+    .tabs a h1 {
+        font-size: 0.9rem;
+    }
+
+    .tabs a h2,
+    .back h3,
+    .option h3,
+    .option h4 {
+        font-size: 0.7rem;
+    }
+
+    .option h3,
+    h4 {
+        width: 50%;
+    }
+
+    .option h4 {
+        text-align: right;
+    }
+
+
+    .bottom h3 {
+        font-size: 0.9rem;
+    }
+
+    .bottom p,
+    .word p,
+    .social i {
+        font-size: 0.7rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 550px) and (orientation: portrait) {
+    .blank {
+        height: 7rem;
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 550px) and (orientation: landscape) {
+    .blank {
+        height: 7rem;
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    .blank {
+        height: 10rem;
+    }
+
+    .text {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .blank {
+        height: 10rem;
+    }
+
+    .text {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (orientation: portrait) {
+    .text {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .text {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (orientation: portrait) {
+    .text {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape) {
+    .text {
+        width: 50%;
+    }
+}
