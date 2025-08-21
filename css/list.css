@@ -264,12 +264,11 @@ hr {
         gap: 1rem;
     }
 
-    .tabs a h1 {
+    .tabs a h1, .back h3 {
         font-size: 0.9rem;
     }
 
     .tabs a h2,
-    .back h3,
     .option h3,
     .option h4 {
         font-size: 0.7rem;
@@ -322,12 +321,12 @@ hr {
         gap: 1rem;
     }
 
-    .tabs a h1 {
+    .tabs a h1,
+    .back h3 {
         font-size: 0.9rem;
     }
 
     .tabs a h2,
-    .back h3,
     .option h3,
     .option h4 {
         font-size: 0.7rem;
@@ -425,6 +424,7 @@ hr {
         width: 50%;
     }
 }
+
 
 
 
